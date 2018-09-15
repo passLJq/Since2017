@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>css幻灯片</title>
+</head>
+<style>
+  .slide{
+    width:550px;
+    height:300px;
+    margin:50px auto;
+    overflow: hidden;
+    box-shadow:0 0 5px rgba(0,0,0,1);
+    background-size: cover;
+    background-position: center;
+    animation: loops 10s infinite;
+    -webkit-animation: loops 15s infinite;
+    -webkit-backface-visibility: hidden;
+  }
+  @-webkit-keyframes "loops" {
+    0% {
+      background: url('image/1.png') no-repeat;
+    }
+    20% {
+      background: url('image/2.png') no-repeat;
+    }
+    40% {
+      background: url('image/3.png') no-repeat;
+    }
+    60% {
+      background: url('image/4.png') no-repeat;
+    }
+    80% {
+      background: url('image/5.png') no-repeat;
+    }
+    100% {
+      background: url('image/1.png') no-repeat;
+    }
+  }
+</style>
+<body>
+  <div class="slide"></div>
+</body>
+</html>
